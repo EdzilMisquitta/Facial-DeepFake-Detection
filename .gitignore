@@ -1,0 +1,16 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Env
+.env
+
+# ML models
+*.h5
+*.pt
+*.pth
