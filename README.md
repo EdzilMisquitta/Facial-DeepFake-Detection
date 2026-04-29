@@ -145,6 +145,15 @@ http://localhost:5173
 * ⚡ Real-time UI (React)
 
 ---
+## 📸 Screenshots
+
+### ✅ REAL Videos
+![Real 1](assets/real1.png)
+![Real 2](assets/real2.png)
+
+### ❌ DEEPFAKE Videos
+![Fake 1](assets/fake1.png)
+![Fake 2](assets/fake2.png)
 
 ## Project Structure
 
