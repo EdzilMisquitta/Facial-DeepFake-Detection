@@ -1,5 +1,151 @@
 # Deepfake Detector — FastAPI + PostgreSQL Backend
 
+# 🎬 Facial Deepfake Detection System
+
+A full-stack AI-powered application that detects whether a video is **REAL or DEEPFAKE** using a pretrained Xception CNN model.
+
+## 🚀 Tech Stack
+
+* **Frontend:** React (Vite)
+* **Backend:** FastAPI
+* **Database:** PostgreSQL
+* **AI Model:** TensorFlow (Xception CNN)
+
+---
+
+# 📥 Clone the Repository
+
+```bash
+git clone https://github.com/EdzilMisquitta/Facial-DeepFake-Detection.git
+cd Facial-DeepFake-Detection
+```
+
+---
+
+# ⚙️ Backend Setup (FastAPI)
+
+## 1. Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+## 2. Activate Environment
+
+```bash
+venv\Scripts\activate     # Windows
+# OR
+source venv/bin/activate  # Mac/Linux
+```
+
+## 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 4. Setup PostgreSQL
+
+Make sure PostgreSQL is running and update your `.env` file:
+
+```env
+DATABASE_URL=postgresql://postgres:password@localhost:5432/deepfake_db
+```
+
+## 5. Add Model File
+
+Place your trained model file:
+
+```text
+cnn_model.h5
+```
+
+in the root folder
+OR update `MODEL_PATH` in `.env`
+
+---
+
+## 6. Run Backend Server
+
+```bash
+uvicorn main:app --reload
+```
+
+👉 Backend runs on:
+
+```
+http://localhost:8000
+```
+
+👉 API Docs:
+
+```
+http://localhost:8000/docs
+```
+
+---
+
+# 🎨 Frontend Setup (React)
+
+## 1. Go to frontend folder
+
+```bash
+cd frontend
+```
+
+## 2. Install dependencies
+
+```bash
+npm install
+```
+
+## 3. Run frontend
+
+```bash
+npm run dev
+```
+
+👉 Frontend runs on:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🎯 How to Use
+
+1. Open frontend in browser
+2. Upload a video
+3. View:
+
+   * Deepfake / Real prediction
+   * Confidence score
+   * Frame analysis
+   * Suspicious frames
+
+---
+
+# ⚠️ Important Notes
+
+* Model file (`cnn_model.h5`) is NOT included due to size limits
+* You can:
+
+  * Train using `train_model.py`
+  * OR use your own trained model
+
+---
+
+# 📌 Features
+
+* 🎥 Video-based deepfake detection
+* 🧠 Frame-by-frame AI analysis
+* 📊 Confidence & statistics
+* 📁 History tracking (PostgreSQL)
+* ⚡ Real-time UI (React)
+
+---
+
 ## Project Structure
 
 ```
